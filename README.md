@@ -2,7 +2,7 @@
 
 Swift module for interacting with mixing consoles via OSC.
 
-This is basically an OOP abstraction on top of the [https://github.com/orchetect/OSCKit](orchetect/OSCKit) module.
+This is basically a domain-specific abstraction on top of [orchetect/OSCKit](https://github.com/orchetect/OSCKit).
 
 It is extremely experimental. I don't know what I'm doing.
 
