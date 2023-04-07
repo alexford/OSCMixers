@@ -11,14 +11,15 @@ xr.xremote()
 xr.info()
 xr.status()
 
-// var faderStep = 1
-// let timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
-//     print("Sending fader")
-//     xr.testFader(Float(faderStep)/10.0)
-//     faderStep += 1
-//     if faderStep > 10 {
-//         faderStep = 1
-//     }
-// }
+var faderStep = 1
+let timer = Timer(timeInterval: 1.0, repeats: true) { timer in
+    print("Sending fader")
+    xr.testFader(Float(faderStep)/10.0)
+    faderStep += 1
+    if faderStep > 10 {
+        faderStep = 1
+    }
+}
 
-dispatchMain()
+RunLoop.current.add(timer, forMode: .common)
+RunLoop.current.run()
