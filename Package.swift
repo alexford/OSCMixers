@@ -13,7 +13,7 @@ let package = Package(
     ],
     
     dependencies: [
-        .package(url: "https://github.com/orchetect/OSCKit", from: "0.4.0")
+        .package(url: "https://github.com/orchetect/OSCKit", branch: "oscpeer")
     ],
     
     targets: [

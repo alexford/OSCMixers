@@ -10,6 +10,15 @@
       }
     },
     {
+      "identity" : "osckit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/orchetect/OSCKit",
+      "state" : {
+        "branch" : "oscpeer",
+        "revision" : "db04d790468fe52fa702492d774c5923fc2b4971"
+      }
+    },
+    {
       "identity" : "otcore",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/orchetect/OTCore",
