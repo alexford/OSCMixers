@@ -10,15 +10,6 @@
       }
     },
     {
-      "identity" : "osckit",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/orchetect/OSCKit",
-      "state" : {
-        "revision" : "c8b341ba1ccc9c39fe121b3abad87eb894d02671",
-        "version" : "0.4.3"
-      }
-    },
-    {
       "identity" : "otcore",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/orchetect/OTCore",

@@ -1,4 +1,4 @@
-# OSCMixer
+# OSCMixers
 
 Swift module for interacting with mixing consoles via OSC.
 

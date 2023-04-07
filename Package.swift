@@ -4,11 +4,12 @@
 import PackageDescription
 
 let package = Package(
-    name: "OSCMixer",
+    name: "OSCMixers",
     products: [
         .library(
-            name: "OSCMixer",
-            targets: ["OSCMixer"]),
+            name: "OSCMixers",
+            targets: ["OSCMixers"]),
+        .executable(name: "Sandbox", targets: ["Sandbox"]),
     ],
     
     dependencies: [
@@ -16,11 +17,14 @@ let package = Package(
     ],
     
     targets: [
+        .executableTarget(
+            name: "Sandbox",
+            dependencies: ["OSCMixers"]),
         .target(
-            name: "OSCMixer",
+            name: "OSCMixers",
             dependencies: ["OSCKit"]),
         .testTarget(
-            name: "OSCMixerTests",
-            dependencies: ["OSCMixer"]),
+            name: "OSCMixersTests",
+            dependencies: ["OSCMixers"]),
     ]
 )
