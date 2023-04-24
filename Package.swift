@@ -5,6 +5,9 @@ import PackageDescription
 
 let package = Package(
     name: "OSCMixers",
+    
+    platforms: [.macOS(.v11), .iOS(.v11), .tvOS(.v11)],
+    
     products: [
         .library(
             name: "OSCMixers",
@@ -13,7 +16,7 @@ let package = Package(
     ],
     
     dependencies: [
-        .package(url: "https://github.com/orchetect/OSCKit", branch: "oscpeer")
+        .package(url: "https://github.com/orchetect/OSCKit", from: "0.5.0")
     ],
     
     targets: [
